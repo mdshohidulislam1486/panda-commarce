@@ -66,3 +66,19 @@ document.getElementById('footer-bg').addEventListener('dblclick', function(event
 
 })
 
+
+
+// scalling part 
+
+const allCardImgs = document.querySelectorAll('.card-img-top')
+
+for(const allCardImg of allCardImgs){
+    allCardImg.addEventListener('mouseenter', function(event){
+        event.target.style.transform= "scale(1.2)"
+    })
+    allCardImg.addEventListener('mouseout', function(event){
+        event.target.style.transform= "scale(1)"
+    })
+   
+} 
+
