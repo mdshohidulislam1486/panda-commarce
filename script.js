@@ -40,7 +40,7 @@ palinText.value ='';
 
 document.getElementById('img-change').addEventListener('mouseenter', function(event){
     event.target.src = 'images/bags/bag-4.jpg'
-})
+},)
 
 /* const getImages = document.querySelectorAll('.card img')
 for(const getImage of getImages){
