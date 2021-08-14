@@ -18,10 +18,19 @@ document.getElementById('add-console').addEventListener('click', function(){
 const allBuyButtons =document.querySelectorAll('button.btn-dark');
 for(const button of allBuyButtons){
     button.addEventListener('click', function(event){
-        let targetDiv = event.target.parentElement;
-        targetDiv.removeChild(event.target)
+        // let targetDiv = event.target.parentElement;
+        // targetDiv.removeChild(event.target)
+        event.target.style.display= "none"
+        event.stopPropagation();
  })
 }
+
+document.querySelector('body').addEventListener('click', function(){
+    for(const button of allBuyButtons){
+        button.style.display = 'block'
+    }
+})
+
 
 document.getElementById('enable-text').addEventListener("keyup", function(event){
 const innnerText = event.target.value
@@ -39,7 +48,7 @@ palinText.value ='';
 })
 
 document.getElementById('img-change').addEventListener('mouseenter', function(event){
-    event.target.src = 'images/bags/bag-4.jpg'
+    event.target.src = 'images/bags/bag-4.png'
 },)
 
 /* const getImages = document.querySelectorAll('.card img')
