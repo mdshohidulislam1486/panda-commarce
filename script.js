@@ -42,10 +42,27 @@ document.getElementById('img-change').addEventListener('mouseenter', function(ev
     event.target.src = 'images/bags/bag-4.jpg'
 })
 
-const getImages = document.querySelectorAll('.card img')
+/* const getImages = document.querySelectorAll('.card img')
 for(const getImage of getImages){
     
     getImage.addEventListener('mouseenter', function(event){
         event.style.transform ="rotate(7deg)"
     })
 }
+ */
+/* const footerBg = document.getElementById('footer-bg');
+footerBg.ondblclick = "changeFooter"
+
+console.log(footerBg)
+
+function changeFooter(){
+    footerBg.style.backgroundColor = 'red'
+    console.log("double Clickd")
+    
+} */
+
+document.getElementById('footer-bg').addEventListener('dblclick', function(event){
+    event.target.style.backgroundColor = 'lightblue'
+
+})
+
