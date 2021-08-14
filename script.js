@@ -37,3 +37,5 @@ document.getElementById('bnt-disable').addEventListener('click', function(){
 const palinText = document.getElementById('enable-text');
 palinText.value ='';
 })
+
+document.getElementById()
